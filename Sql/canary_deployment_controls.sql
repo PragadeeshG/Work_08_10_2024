@@ -1,0 +1,15 @@
+create table if not exists canary_deployment_controls(
+canary_deployment_release_indicator Integer not null,
+deployment_mode varchar(255) null,
+ado_enabled varchar(255) null,
+ado_attestations varchar(255) null,
+ado_migrated_on varchar(255) null,
+automated Integer null,
+custom_automated char null,
+custom_canary char null,
+canary25 Integer null,
+canary50 Integer null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint canary_deployment_controls_pk primary key(canary_deployment_release_indicator));
